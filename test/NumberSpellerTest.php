@@ -28,6 +28,7 @@ class NumberSpellerTest extends \PHPUnit_Framework_TestCase
         $formatter = NumberSpellerFactory::create('pl_PL');
 
         $test = [
+            0 => 'zero',
             1 => 'jeden',
             2 => 'dwa',
             5 => 'pięć',

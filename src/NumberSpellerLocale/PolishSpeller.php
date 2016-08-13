@@ -93,6 +93,10 @@ final class PolishSpeller extends NumberSpeller
     {
         $this->validateNumber($number);
 
+        if (100 > $number) {
+            return $this->translate($number);
+        }
+
         $parts = $this->splitNumber($number);
         $multiplier = count($parts);
 
