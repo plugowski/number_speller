@@ -93,7 +93,7 @@ final class PolishSpeller extends NumberSpeller
     {
         $this->validateNumber($number);
 
-        if (100 > $number) {
+        if (1000 > $number) {
             return $this->translate($number);
         }
 
